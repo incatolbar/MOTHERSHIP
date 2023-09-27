@@ -93,8 +93,8 @@ label {
     height: auto;
     position: fixed;
     visibility: hidden;
-    background-color: #fff; /* Cambia esto al color que desees */
-    border: 1px solid #ccc; /* Estilo del borde */
+    background-color: #fff;
+    border: 1px solid #ccc;
     padding: 10px;
     transition: visibility 0.2s;
 }
