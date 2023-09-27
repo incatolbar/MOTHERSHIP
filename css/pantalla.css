@@ -6,49 +6,133 @@
 }
 
 body {
-    color:#9A9A9A;
+    background-color:#F2F2F2;
     font-family:'Lato',sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 header {
     display: flex;
-    border-bottom: 2px solid #D9D9D9;
-    padding: 7px; /* Añade espacio interno para el contenido dentro del borde */
-}
-
-.texto {
-    border-bottom: 2px solid #D9D9D9;
-    padding: 0;
-  }
-
-.texto h3 {
-    margin:10px;
+    padding: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 8.6rem;
+    margin-bottom: 5rem;
 }
 
 .logo img {
-    width: 140px;
+    max-width: 192px;
     height: auto;
 }
 
+.opciones ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.opciones li {
+    padding-left: 50px;
+}
+
+.opciones a {
+    text-decoration: none;
+    color:#5D00B9;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+
+.opciones a:hover {
+    text-decoration: underline;
+} 
+
+h2 {
+    color: #CC00FF;
+    font-size: 32px;
+}
 .campos {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    text-align: left;
+}
+
+label {
+    width: 818px;
+    text-align: left;
+    color:#09244B;
+    font-size: 24px;
 }
 
 .campos input {
-    width: 450px;
-    height: 30px;
+    width: 818px;
+    height: 50px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 ::placeholder {
     font-family:'Lato', sans-serif;
     font-weight: 580;
-    color: #9A9A9A;
+    color: #09244b7e;
     padding-left: 5px;
+    font-size: 20px;
+}
+
+.menu-oculto {
+    width: 105px;
+    height: auto;
+    position: fixed;
+    visibility: hidden;
+    background-color: #fff; /* Cambia esto al color que desees */
+    border: 1px solid #ccc; /* Estilo del borde */
+    padding: 10px;
+    transition: visibility 0.2s;
+}
+
+.menu-oculto.activo {
+    visibility: visible;
+}
+
+.menu-oculto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-oculto li {
+    margin: 5px 0;
+    text-align: right;
+}
+
+.menu-oculto a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.menu-oculto a:hover {
+    text-decoration: underline;
+} 
+
+.menu-oculto img {
+    width: 31.96px;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#personaje {
+    margin-top: 4rem;
+    margin-bottom: 7rem;
 }
 
 .arquetipos {
@@ -58,35 +142,40 @@ header {
 }
 
 .arquetipos button {
-    text-align: left;
-    vertical-align: top;
+    width: 223px;
+    height: auto;
     padding: 0;
     background: none;
     cursor: pointer;
     padding-bottom: 30px;
     margin: 5px;
-    border-color: #00000027; /* Color del borde con opacidad */
-    border-width: 1px; /* Ancho del borde (ajusta según tus necesidades) */
-    border-style: solid;
+    border: none;
+    margin-right: 23px;
 }
 
 .arquetipos img {
-    vertical-align: top;
-    width: 150px;
+    width: 223px;
     height: auto;
     margin: 0;
-    padding: 0;
+    margin-bottom: 1rem;
 }
 
 p {
     font-family:'Lato', sans-serif;
-    color: #9A9A9A;
-    text-align: left;
+    font-size: 20px;
+    color: #09244B;
+    text-align: center;
     margin: 0;
     padding: 0;
-    padding-left: 5px;
-    padding-top: 5PX;
 }
 
-
+footer {
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 8.25rem;
+    margin-top: 6rem;
+}
 

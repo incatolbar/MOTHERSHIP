@@ -11,19 +11,42 @@
         <div class="logo">
             <img src="../images/Logo.jpg" alt="Logo de MotherShip" id="logo">
         </div>
+        <nav class="opciones">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="texto">
-        <h3>¿Puedo ayudarte con la redacción de un texto?</h3>
-    </div>
-    <div class="campos">
-        <h2>Vamos a crear su narrativa transmedia juntos</h2>
-        <input type="text" placeholder="Nombre de su campaña transmedia">
-        <input type="text" placeholder="Responsable de la campaña">
-        <input type="text" placeholder="URL, CONTACTO, PERSONA">
-    </div>
+    <div class="contenedor">
+    
+        <img src="../icons/puntos_icon.png" alt="">
+
+        <nav class="menu-oculto">
+            <ul>
+                <li><a href="#"></a><img src="../icons/text_icon.png"></li>
+                <li><a href="#"></a><img src="../icons/image_icon.png"></li>
+                <li><a href="#"></a><img src="../icons/video_icon.png"></li>
+                <li><a href="#"></a><img src="../icons/music_icon.png"></li>
+                <li><a href="#"></a><img src="../icons/share_icon.png"></li>
+            </ul>
+        </nav> 
+</div>
+
+<div class="campos">
+    <h2>Vamos a crear su narrativa transmedia juntos</h2>
+    <label for="nombre">Nombre de su compañía transmedia *</label>
+    <input type="text" placeholder="Ejemplo: Bolsos según la ocasión de uso">
+    <label for="responsable">Responsable de la campaña *</label>
+    <input type="text" placeholder="Ejemplo: Maria Rodriguez">
+    <label for="contacto">URL, CONTACTO, PERSONA *</label>
+    <input type="text" placeholder="Ejemplo: https://maria.rodriguez.com">
+</div>
+
 
     <div class="arquetipos">
-        <h2>Imagine su personaje principal</h2>
+        <h2 id="personaje">Imagine su personaje principal</h2>
         <div class="fila1">
             <button type="button">
                 <img src="../images/Exploradora.png" alt="Personalidad exploradora" id="Exploradora">
@@ -79,5 +102,11 @@
             </button>
         </div>
     </div>
+    <footer>
+        <div class="copyright">
+            <img src="../icons/© 2023 MotherShip.png" alt="Copyright de MotherShip" id="copyright">
+        </div>
+    </footer>
+    <script src="../javascript/pantalla.js"></script>
 </body>
 </html>
