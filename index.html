@@ -15,38 +15,65 @@
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="#">Cerrar sesión</a></li>
+                <li><a href="#">Iniciar sesión</a></li>
             </ul>
         </nav>
     </header>
-    <div class="contenedor">
-    
-        <img src="../icons/puntos_icon.png" alt="">
+    <div class="breadcrumbs" id="breadcrumbs">
+        <a href="./index.html">Crear historia</a>
+        <span> > </span>
+        <a href="#">Seleccionar imagenes</a>
+        <span> > </span>
+        <a href="#">Musicalizar</a>
+        <span> > </span>
+        <a href="#">Compartir</a>
+    </div>
 
-        <nav class="menu-oculto">
-            <ul>
-                <li><a href="#"></a><img src="../icons/text_icon.png"></li>
-                <li><a href="#"></a><img src="../icons/image_icon.png"></li>
-                <li><a href="#"></a><img src="../icons/video_icon.png"></li>
-                <li><a href="#"></a><img src="../icons/music_icon.png"></li>
-                <li><a href="#"></a><img src="../icons/share_icon.png"></li>
-            </ul>
-        </nav> 
+<div class="campos1">
+    <h2>Crea la narrativa transmedia</h2>
+    <h3>Elementos de marca</h3>
+    <label for="nombre">Nombre de la campaña transmedia *</label>
+    <input type="text" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; ">
+    <label for="genero">Género *</label>
+    <select name="genero" id="genero" placeholder="Seleccionar">
+        <option value></option>
+        <option value="femenino">Femenino</option> 
+        <option value="masculino">Masculino</option>
+    </select>
+    <label for="enlace">Enlace para más información *</label>
+    <input type="text" placeholder="URL, contacto, etc.">
 </div>
 
-<div class="campos">
-    <h2>Vamos a crear su narrativa transmedia juntos</h2>
-    <label for="nombre">Nombre de su compañía transmedia *</label>
-    <input type="text" placeholder="Ejemplo: Bolsos según la ocasión de uso">
-    <label for="responsable">Responsable de la campaña *</label>
-    <input type="text" placeholder="Ejemplo: Maria Rodriguez">
-    <label for="contacto">URL, CONTACTO, PERSONA *</label>
-    <input type="text" placeholder="Ejemplo: https://maria.rodriguez.com">
+<div class="campos2">
+    <h2>Nombre de la campaña transmedia</h2>
+    <h3>Paso 1 : Crea la historia con ayuda de la IA ( storytelling ).</h3>
+    <label for="protagonista">¿Quién es el protagonista de la historia? *</label>
+    <input type="text" placeholder="Ejemplo: El príncipe, la princesa, el mago, el villano, etc.">
+    <label for="objetivo">¿Qué es lo que el protagonista quiere obtener o lograr? *</label>
+    <input type="text" placeholder="Ejemplo: Un tesoro, el amor de la princesa, la paz en el reino, etc.">
+    <label for="motivo">¿Quién o qué motiva la acción del protagonista? *</label>
+    <select name="motivo" id="motivo" placeholder="Seleccionar">
+        <option value></option>
+        <option value="amor">Amor</option> 
+        <option value="venganza">Venganza</option>
+        <option value="amistad">Amistad</option> 
+        <option value="felicidad">Felicidad</option>
+        <option value="enojo">Enojo</option> 
+        <option value="miedo">Miedo</option>
+    </select>
+    <label for="beneficio">¿Quién o qué se beneficia de la acción del protagonista? *</label>
+    <input type="text" placeholder="Ejemplo: El protagonista, la princesa, el reino, el mundo, etc.">
+    <label for="ayuda">¿Quién o qué ayuda al protagonista a lograr su objetivo? *</label>
+    <input type="text" placeholder="Ejemplo: Un amigo, un familiar, un objeto mágico, una fuerza interior, etc.">
+    <label for="interferencia">¿Quién o qué se interpone en el camino del protagonista? *</label>
+    <input type="text" placeholder="Ejemplo: Un villano, un obstáculo, un miedo, una duda, etc. ">
+    <label for="nombre">¿Cuáles son los mensajes clave más relevantes en este contexto? *</label>
+    <input type="text" placeholder="Ejemplo: Enfrentar desafíos o pruebas, Resolver conflictos, etc.">
 </div>
-
 
     <div class="arquetipos">
         <h2 id="personaje">Imagine su personaje principal</h2>
+        <h3>Paso 2 : Selecciona el arquetipo.</h3>
         <div class="fila1">
             <button type="button">
                 <img src="../images/Exploradora.png" alt="Personalidad exploradora" id="Exploradora">
@@ -102,6 +129,9 @@
             </button>
         </div>
     </div>
+
+    <button type="submit" id="submitBtn">Generar historia</button>
+
     <footer>
         <div class="copyright">
             <img src="../icons/© 2023 MotherShip.png" alt="Copyright de MotherShip" id="copyright">

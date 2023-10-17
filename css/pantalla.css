@@ -14,19 +14,20 @@ body {
 
 header {
     display: flex;
-    padding: 7px;
-    padding-left: 50px;
+    padding: 0;
+    padding-top: 1px;
+    padding-left: 83px;
     padding-right: 50px;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    height: 8.6rem;
-    margin-bottom: 5rem;
+    height: 3.75rem;
 }
 
 .logo img {
-    max-width: 192px;
+    max-width: 238px;
     height: auto;
+
 }
 
 .opciones ul {
@@ -42,7 +43,7 @@ header {
 
 .opciones a {
     text-decoration: none;
-    color:#5D00B9;
+    color:#09244B;
     font-weight: bold;
     font-size: 18px;
     line-height: 21.6px;
@@ -52,11 +53,24 @@ header {
     text-decoration: underline;
 } 
 
+#breadcrumbs {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    width: auto;
+    height: 4rem;
+    text-align: center;
+}
+
+#breadcrumbs a {
+    text-decoration: none;
+}
+
 h2 {
     color: #CC00FF;
     font-size: 32px;
 }
-.campos {
+.campos1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -71,7 +85,7 @@ label {
     font-size: 24px;
 }
 
-.campos input {
+.campos1 input {
     width: 818px;
     height: 50px;
     border: 1px solid #ccc;
@@ -86,48 +100,6 @@ label {
     color: #09244b7e;
     padding-left: 5px;
     font-size: 20px;
-}
-
-.menu-oculto {
-    width: 105px;
-    height: auto;
-    position: fixed;
-    visibility: hidden;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    transition: visibility 0.2s;
-}
-
-.menu-oculto.activo {
-    visibility: visible;
-}
-
-.menu-oculto ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-oculto li {
-    margin: 5px 0;
-    text-align: right;
-}
-
-.menu-oculto a {
-    text-decoration: none;
-    color: #333;
-    cursor: pointer;
-}
-
-.menu-oculto a:hover {
-    text-decoration: underline;
-} 
-
-.menu-oculto img {
-    width: 31.96px;
-    height: auto;
-    padding: 10px;
-    cursor: pointer;
 }
 
 #personaje {
@@ -175,7 +147,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    height: 8.25rem;
+    height: 3.75rem;
     margin-top: 6rem;
 }
 
