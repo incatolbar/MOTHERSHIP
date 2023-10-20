@@ -22,12 +22,12 @@ header {
     align-items: center;
     background-color: white;
     height: 3.75rem;
+    border-bottom: 1px solid #09244B;
 }
 
 .logo img {
     max-width: 238px;
     height: auto;
-
 }
 
 .opciones ul {
@@ -60,6 +60,7 @@ header {
     width: auto;
     height: 4rem;
     text-align: center;
+    margin-left: 36%;
 }
 
 #breadcrumbs a {
@@ -70,6 +71,14 @@ h2 {
     color: #CC00FF;
     font-size: 32px;
 }
+
+hr {
+    width: 70%;
+    background-color:#09244b2a;
+    height: 4px;
+    margin-top: 40px;
+}
+
 .campos1 {
     display: flex;
     flex-direction: column;
@@ -78,14 +87,49 @@ h2 {
     text-align: left;
 }
 
+.campos2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: left;
+}
+
+h3 {
+    color: #CC00FF;
+    font-size: 24px;
+    width: 818px;
+    text-align: left ;
+    padding-left: 15px;
+}
+
+.campos1 h3 {
+    margin-bottom: 10px;
+}
+
+#elementos {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 label {
     width: 818px;
     text-align: left;
     color:#09244B;
     font-size: 24px;
+    padding-left: 15px;
 }
 
-.campos1 input {
+input {
+    width: 818px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+select {
     width: 818px;
     height: 50px;
     border: 1px solid #ccc;
@@ -104,13 +148,16 @@ label {
 
 #personaje {
     margin-top: 4rem;
-    margin-bottom: 7rem;
 }
 
 .arquetipos {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.arquetipos h3 {
+    margin-bottom: 7rem;
 }
 
 .arquetipos button {
@@ -141,6 +188,26 @@ p {
     padding: 0;
 }
 
+.submit {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submitBtn {
+    width: 210px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 6px;
+    cursor: pointer;
+    border: none;
+    color: #F2F2F2;
+    background-color: #5D00B9;
+}
+
 footer {
     display: flex;
     padding-left: 50px;
@@ -149,5 +216,11 @@ footer {
     background-color: white;
     height: 3.75rem;
     margin-top: 6rem;
+    border-top:1px solid #09244B;
+}
+
+.iconos {
+    padding: 10px;
+    margin-right: 25px;
 }
 

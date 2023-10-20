@@ -31,10 +31,11 @@
 
 <div class="campos1">
     <h2>Crea la narrativa transmedia</h2>
-    <h3>Elementos de marca</h3>
-    <label for="nombre">Nombre de la campaña transmedia *</label>
+    <h3>Crea el personaje:</h3>
+    <h3 id="elementos">Elementos de marca</h3>
+    <label for="nombre">Ponle un nombre a tu personaje *</label>
     <input type="text" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; ">
-    <label for="genero">Género *</label>
+    <label for="genero">Define el género de tu personaje *</label>
     <select name="genero" id="genero" placeholder="Seleccionar">
         <option value></option>
         <option value="femenino">Femenino</option> 
@@ -43,7 +44,7 @@
     <label for="enlace">Enlace para más información *</label>
     <input type="text" placeholder="URL, contacto, etc.">
 </div>
-
+<hr>
 <div class="campos2">
     <h2>Nombre de la campaña transmedia</h2>
     <h3>Paso 1 : Crea la historia con ayuda de la IA ( storytelling ).</h3>
@@ -72,7 +73,7 @@
 </div>
 
     <div class="arquetipos">
-        <h2 id="personaje">Imagine su personaje principal</h2>
+        <h2 id="personaje">Que personalidad tiene el protagonista</h2>
         <h3>Paso 2 : Selecciona el arquetipo.</h3>
         <div class="fila1">
             <button type="button">
@@ -130,11 +131,19 @@
         </div>
     </div>
 
+    <div class="submit">
     <button type="submit" id="submitBtn">Generar historia</button>
+    </div>
 
     <footer>
         <div class="copyright">
             <img src="../icons/© 2023 MotherShip.png" alt="Copyright de MotherShip" id="copyright">
+        </div>
+        <div class="iconos">
+            <img src="./icons/icono1.png" alt="zoom" id="zoom">
+            <img src="./icons/icono2.png" alt="youtube" id="youtube">
+            <img src="./icons/icono3.png" alt="linkedin" id="linkedin">
+            <img src="./icons/icono4.png" alt="email" id="email">
         </div>
     </footer>
     <script src="../javascript/pantalla.js"></script>
