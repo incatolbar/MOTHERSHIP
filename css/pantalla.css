@@ -60,7 +60,8 @@ header {
     width: auto;
     height: 4rem;
     text-align: center;
-    margin-left: 36%;
+    padding-left: 36%;
+    margin-bottom: 55px;
 }
 
 #breadcrumbs a {
@@ -76,7 +77,8 @@ hr {
     width: 70%;
     background-color:#09244b2a;
     height: 4px;
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 .campos1 {
@@ -103,13 +105,18 @@ h3 {
     padding-left: 15px;
 }
 
-.campos1 h3 {
-    margin-bottom: 10px;
+.campos1 h2 {
+    margin-bottom: 40px;
 }
 
 #elementos {
     margin-top: 10px;
     margin-bottom: 40px;
+}
+
+#crea {
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
 label {
@@ -118,6 +125,11 @@ label {
     color:#09244B;
     font-size: 24px;
     padding-left: 15px;
+    margin-top: 15px;
+}
+
+label .asterisk {
+    color: #CC00FF;
 }
 
 input {
@@ -139,6 +151,14 @@ select {
 }
 
 ::placeholder {
+    font-family:'Lato', sans-serif;
+    font-weight: 580;
+    color: #09244b7e;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+option {
     font-family:'Lato', sans-serif;
     font-weight: 580;
     color: #09244b7e;
@@ -189,7 +209,7 @@ p {
 }
 
 .submit {
-    margin-top: 4rem;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,6 +226,15 @@ p {
     border: none;
     color: #F2F2F2;
     background-color: #5D00B9;
+    transition: box-shadow 0.3s;
+}
+
+#submitBtn:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.308); /* Agrega una sombra al pasar el cursor por encima */
+}
+
+#submitBtn:active {
+    background-color: #09244B; /* Cambia el color del botón al hacer clic */
 }
 
 footer {
@@ -220,7 +249,14 @@ footer {
 }
 
 .iconos {
-    padding: 10px;
+    padding: 20px;
     margin-right: 25px;
+}
+
+#zoom,
+#youtube,
+#linkedin,
+#email {
+    padding-left: 10px;
 }
 
