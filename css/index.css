@@ -76,12 +76,14 @@ h2 {
 hr {
     width: 70%;
     background-color:#09244b2a;
-    height: 4px;
+    height: 1px;
     margin-top: 80px;
     margin-bottom: 50px;
 }
 
-.campos1 {
+.campos1,
+.campos2,
+.campos3 {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -89,13 +91,6 @@ hr {
     text-align: left;
 }
 
-.campos2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    text-align: left;
-}
 
 h3 {
     color: #CC00FF;
@@ -141,6 +136,14 @@ input {
     margin-bottom: 0.5rem;
 }
 
+::placeholder {
+    font-family:'Lato', sans-serif;
+    font-weight: 580;
+    color: #09244b7e;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
 select {
     width: 818px;
     height: 50px;
@@ -150,13 +153,6 @@ select {
     margin-bottom: 0.5rem;
 }
 
-::placeholder {
-    font-family:'Lato', sans-serif;
-    font-weight: 580;
-    color: #09244b7e;
-    padding-left: 5px;
-    font-size: 20px;
-}
 
 option {
     font-family:'Lato', sans-serif;
@@ -165,6 +161,7 @@ option {
     padding-left: 5px;
     font-size: 20px;
 }
+
 
 #personaje {
     margin-top: 4rem;
@@ -230,11 +227,11 @@ p {
 }
 
 #submitBtn:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.308); /* Agrega una sombra al pasar el cursor por encima */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.308);
 }
 
 #submitBtn:active {
-    background-color: #09244B; /* Cambia el color del botón al hacer clic */
+    background-color: #09244B;
 }
 
 footer {
@@ -260,3 +257,9 @@ footer {
     padding-left: 10px;
 }
 
+/*
+.enlarged {
+    font-size: 1.2em;
+    transform: scale(1.2);
+}
+*/

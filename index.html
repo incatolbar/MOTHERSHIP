@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pantalla.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Crea tu historia</title>
 </head>
 <body>
@@ -42,17 +42,17 @@
     <h2>Nombre de la campaña transmedia</h2>
     <h3>Paso 1 : Crea la historia con ayuda de la IA ( storytelling ).</h3>
     <h3 id="crea">Crea el personaje:</h3>
-    <label for="genero">Define el género de tu personaje <span class="asterisk">*</span></label>
-    <select name="genero" id="genero" placeholder="Seleccionar">
-        <option disabled selected value="seleccionar">Seleccionar</option>
+    <label for="genero">Selecciona el género de tu personaje: <span class="asterisk">*</span></label>
+        <select name="genero" id="genero" size="1">
+        <option value="" disabled selected></option>
         <option value="femenino">Femenino</option> 
         <option value="masculino">Masculino</option>
-    </select>
+        </select>
     <label for="protagonista">Ponle un nombre a tu personaje: <span class="asterisk">*</span></label>
     <input type="text" placeholder="Ejemplo: El príncipe, la princesa, el mago, el villano, etc.">
     <label for="motivo">Todos tenemos un objetivo en la vida, define para tu personaje un objetivo: <span class="asterisk">*</span></label>
     <input type="text" placeholder="Ejemplo: Un tesoro, el amor de la princesa, la paz en el reino, etc.">
-    <label for="beneficio">La motivación es importante para cumplir nuestros objetivos, define que motiva a tu personaje? <span class="asterisk">*</span></label>
+    <label for="beneficio">La motivación es importante para cumplir nuestros objetivos, define que motiva a tu personaje: <span class="asterisk">*</span></label>
     <input type="text" placeholder="Ejemplo: Amor, odio, esperanza, alegría, venganza, ira, etc.">
     <hr>
     <h3 id="emocion">Genera la emoción en la historia:</h3>
@@ -60,14 +60,14 @@
     <input type="text" placeholder="Ejemplo: Un villano, un obstáculo, un miedo, una duda, etc. ">
     <label for="ayuda">Asigna un ayudante a tu personaje, ponle un nombre: <span class="asterisk">*</span></label>
     <input type="text" placeholder="Ejemplo: Un amigo, un familiar, un objeto mágico, una fuerza interior, etc.">
-    <label for="interferencia">Qué actitud tiene el ayudante de tu personaje: <span class="asterisk">*</span></label>
+    <label for="interferencia">¿Qué actitud tiene el ayudante de tu personaje? <span class="asterisk">*</span></label>
     <input type="text" placeholder="Ejemplo: Divertido, loco, sabio, etc.">
     <label for="nombre">¿Cuál es el mensaje que quieres dejar con la historia? <span class="asterisk">*</span></label>
     <input type="text" placeholder="Ejemplo: Enfrentar desafíos o pruebas, Resolver conflictos, etc.">
 </div>
 
     <div class="arquetipos">
-        <h2 id="personaje">Que personalidad tiene el protagonista</h2>
+        <h2 id="personaje">¿Qué personalidad tiene el protagonista?</h2>
         <h3>Paso 2 : Selecciona el arquetipo.</h3>
         <div class="fila1">
             <button type="button">
@@ -125,6 +125,7 @@
         </div>
     </div>
 
+    
     <div class="submit">
     <button type="submit" id="submitBtn">Generar historia</button>
     </div>
@@ -140,6 +141,6 @@
             <img src="./icons/icono4.png" alt="email" id="email">
         </div>
     </footer>
-    <script src="../javascript/pantalla.js"></script>
+    <script src="../javascript/index.js"></script>
 </body>
 </html>
