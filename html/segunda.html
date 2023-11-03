@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../images/Logo.jpg" alt="Logo de MotherShip" id="logo">
+            <img src="../images/Logo.png" alt="Logo de MotherShip" id="logo">
         </div>
         <nav class="opciones">
             <ul>
@@ -32,25 +32,14 @@
 
 <div class="campos3">
     <h2>Nombre de la campaña transmedia</h2>
-    <h3>Paso 3 : Edita tu historia.</h3>
-    <form>
-        <label id="circle-label">
-            <input type="checkbox" name="opcion1">
-            <span class="custom-checkbox"></span> Hacer en tres párrafos y que cada párrafo tenga 250 caracteres.
-        </label>
-        <label id="circle-label"> 
-            <input type="checkbox" name="opcion2">
-            <span class="custom-checkbox"></span> Hashtag
-        </label>
-        <label id="circle-label">
-            <input type="checkbox" name="opcion3">
-            <span class="custom-checkbox"></span> Emoji
-        </label>
-    </form>
+    <textarea name="storytelling" placeholder="Storytelling (Historia) " id= "storytelling" maxlength="750" readonly></textarea>
+    <p class="caracteres">Carácteres 750 / 750</p>
+    <textarea name="copy" placeholder="Copy " id= "copy" maxlength="180" readonly></textarea>
+    <p class="caracteres">Carácteres 180 / 0</p>
 </div>
-    
+
     <div class="submit">
-    <button type="submit" id="submitBtn">Guardar y continuar</button>
+    <button type="submit" id="submitBtn2">Guardar y continuar</button>
     </div>
 
     <footer>
@@ -64,6 +53,6 @@
             <img src="../icons/icono4.png" alt="email" id="email">
         </div>
     </footer>
-    <script src="../javascript/index.js"></script>
+    <script src="../javascript/segunda.js"></script>
 </body>
 </html>
