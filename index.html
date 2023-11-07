@@ -33,9 +33,9 @@
     <h2>Crea la narrativa transmedia</h2>
     <h3 id="elementos">Elementos de marca:</h3>
     <label for="nombre">Nombre de la campaña transmedia <span class="asterisk">*</span></label>
-    <input type="text" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; " required pattern="^[.,]*$">
+    <input type="text" id="nombre" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; " required pattern="^[.,]*$">
     <label for="enlace">Enlace para más información <span class="asterisk">*</span></label>
-    <input type="enlace" placeholder="URL, contacto, etc." maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
+    <input type="enlace" id="enlace" placeholder="URL, contacto, etc." maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
 </div>
 <hr>
 <div class="campos2">
@@ -49,76 +49,76 @@
         <option value="masculino">Masculino</option>
         </select>
     <label for="protagonista">Ponle un nombre a tu protagonista: <span class="asterisk">*</span></label>
-    <input type="text" placeholder="Ejemplo: Felipe.">
-    <label for="motivo">Todos tenemos un objetivo en la vida, define para tu protagonista un objetivo: <span class="asterisk">*</span></label>
-    <input type="text" placeholder="Ejemplo: Encontrar a la princesa.">
-    <label for="beneficio">La motivación es importante para cumplir nuestros objetivos, define que motiva a tu protagonista? <span class="asterisk">*</span></label>
-    <input type="text" placeholder="Ejemplo: Amor, odio, esperanza, alegría, venganza, ira, etc.">
+    <input type="text" id="protagonista" placeholder="Ejemplo: Felipe.">
+    <label for="objetivo">Todos tenemos un objetivo en la vida, define para tu protagonista un objetivo: <span class="asterisk">*</span></label>
+    <input type="text" id="objetivo" placeholder="Ejemplo: Encontrar a la princesa.">
+    <label for="motivacion">La motivación es importante para cumplir nuestros objetivos, define que motiva a tu protagonista? <span class="asterisk">*</span></label>
+    <input type="text" id="motivacion" placeholder="Ejemplo: Amor, odio, esperanza, alegría, venganza, ira, etc.">
     <hr>
     <h3 id="emocion">Paso 2: Genera la emoción en la historia: </h3>
-    <label for="objetivo">¿Qué o quién es el malo que le impide a tu protagonista cumplir su objetivo? <span class="asterisk">*</span></label>
-    <input type="text" placeholder="Ejemplo: Un villano, un obstáculo, un miedo, una duda, etc. ">
-    <label for="ayuda">Asigna un ayudante a tu protagonista: <span class="asterisk">*</span></label>
-    <input type="text" placeholder="Ejemplo: Un amigo, un familiar, un objeto mágico, una fuerza interior, etc.">
-    <label for="interferencia">Qué actitud tiene el ayudante de tu protagonista: <span class="asterisk">*</span></label>
-    <input type="text" placeholder="Ejemplo: Divertido, loco, sabio, etc.">
-    <label for="nombre">¿Cuál es el mensaje que quieres dejar con la historia? <span class="asterisk">*</span></label>
-    <input type="text" placeholder="Ejemplo: Enfrentar desafíos o pruebas, Resolver conflictos, etc.">
+    <label for="malo">¿Qué o quién es el malo que le impide a tu protagonista cumplir su objetivo? <span class="asterisk">*</span></label>
+    <input type="text" id="malo" placeholder="Ejemplo: Un villano, un obstáculo, un miedo, una duda, etc. ">
+    <label for="ayudante">Asigna un ayudante a tu protagonista: <span class="asterisk">*</span></label>
+    <input type="text" id="ayudante" placeholder="Ejemplo: Un amigo, un familiar, un objeto mágico, una fuerza interior, etc.">
+    <label for="actitud">Qué actitud tiene el ayudante de tu protagonista: <span class="asterisk">*</span></label>
+    <input type="text" id="actitud" placeholder="Ejemplo: Divertido, loco, sabio, etc.">
+    <label for="mensaje">¿Cuál es el mensaje que quieres dejar con la historia? <span class="asterisk">*</span></label>
+    <input type="text" id="mensaje" placeholder="Ejemplo: Enfrentar desafíos o pruebas, Resolver conflictos, etc.">
 </div>
 
     <div class="arquetipos">
-        <h3 id="personaje">Paso 3: ¿Que comportamiento tiene tu protagonista?</h3>
+        <h3 id="comportamiento">Paso 3: ¿Que comportamiento tiene tu protagonista?</h3>
         <div class="fila1">
             <button type="button">
-                <img src="../images/Exploradora.png" alt="Personalidad exploradora" id="Exploradora">
+                <img src="../images/Exploradora.png" alt="Exploradora" id="Exploradora">
                 <p>Exploradora</p>
             </button>
             <button type="button">
-                <img src="../images/Heroina.png" alt="Personalidad heroina" id="Heroina">
+                <img src="../images/Heroina.png" alt="Heroina" id="Heroina">
                 <p>Heroína</p>
             </button>
             <button type="button">
-                <img src="../images/Comun.png" alt="Personalidad común" id="Comun">
+                <img src="../images/Comun.png" alt="Común" id="Comun">
                 <p>Común</p>
             </button>
             <button type="button">
-                <img src="../images/Inocente.png" alt="Personalidad inocente" id="Inocente">
+                <img src="../images/Inocente.png" alt="Inocente" id="Inocente">
                 <p>Inocente</p>
             </button>
         </div>
         <div class="fila2">
             <button type="button">
-                <img src="../images/Cuidadora.png" alt="Personalidad cuidadora" id="Cuidadora">
+                <img src="../images/Cuidadora.png" alt="Cuidadora" id="Cuidadora">
                 <p>Cuidadora</p>
             </button>
             <button type="button">
-                <img src="../images/Creativa.png" alt="Personalidad creativa" id="Creativa">
+                <img src="../images/Creativa.png" alt="Creativa" id="Creativa">
                 <p>Creativa</p>
             </button>
             <button type="button">
-                <img src="../images/Rebelde.png" alt="Personalidad rebelde" id="Rebelde">
+                <img src="../images/Rebelde.png" alt="Rebelde" id="Rebelde">
                 <p>Rebelde</p>
             </button>
             <button type="button">
-                <img src="../images/Gobernante.png" alt="Personalidad gobernante" id="Gobernante">
+                <img src="../images/Gobernante.png" alt="Gobernante" id="Gobernante">
                 <p>Gobernante</p>
             </button>
         </div>
         <div class="fila3">
             <button type="button">
-                <img src="../images/Bufona.png" alt="Personalidad bufona" id="Bufona">
+                <img src="../images/Bufona.png" alt="Bufona" id="Bufona">
                 <p>Bufona</p>
             </button>
             <button type="button">
-                <img src="../images/Maga.png" alt="Personalidad maga" id="Maga">
+                <img src="../images/Maga.png" alt="Maga" id="Maga">
                 <p>Maga</p>
             </button>
             <button type="button">
-                <img src="../images/Sabia.png" alt="Personalidad sabia" id="Sabia">
+                <img src="../images/Sabia.png" alt="Sabia" id="Sabia">
                 <p>Sabia</p>
             </button>
             <button type="button">
-                <img src="../images/Amante.png" alt="Personalidad amante" id="Amante">
+                <img src="../images/Amante.png" alt="Amante" id="Amante">
                 <p>Amante</p>
             </button>
         </div>
@@ -126,7 +126,7 @@
 
     
     <div class="submit">
-    <button type="submit" id="submitBtn">Generar historia</button>
+    <button type="button" id="submitBtn">Generar historia</button>
     </div>
 
     <footer>
