@@ -6,6 +6,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color:#F2F2F2;
     font-family:'Lato',sans-serif;
     padding: 0;
@@ -26,7 +28,7 @@ header {
 }
 
 .logo img {
-    max-width: 238px;
+    max-width: 14.875rem;
     height: auto;
 }
 
@@ -45,8 +47,8 @@ header {
     text-decoration: none;
     color:#09244B;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 21.6px;
+    font-size: 1.125rem;
+    line-height: 1.35rem;
 }
 
 .opciones a:hover {
@@ -57,28 +59,29 @@ header {
     display: flex;
     background-color: white;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: 4rem;
     text-align: center;
-    padding-left: 36%;
-    margin-bottom: 55px;
+    margin-bottom: 3.438rem;
+    justify-content: center;
 }
 
 #breadcrumbs a {
     text-decoration: none;
+    text-align: center;
 }
 
 h2 {
     color: #CC00FF;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 hr {
     width: 70%;
     background-color:#09244b2a;
     height: 1px;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 5rem ;
+    margin-bottom: 3.125rem;
 }
 
 .campos1,
@@ -86,7 +89,7 @@ hr {
 .campos3 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
     text-align: left;
 }
@@ -94,24 +97,26 @@ hr {
 
 h3 {
     color: #CC00FF;
-    font-size: 24px;
-    width: 818px;
+    font-size: 1.5rem;
+    width: 51.125rem;
     text-align: left ;
-    padding-left: 15px;
+    padding-left: 0.938rem;
 }
 
 .campos1 h2 {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
+    width: 51.125rem;
+    text-align: center;
 }
 
 #elementos {
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 0.625rem;
+    margin-bottom: 2.5rem;
 }
 
 #paso1 {
-    margin-top: 20px;
-    margin-bottom: 35px;
+    margin-top: 1.25rem;
+    margin-bottom: 2.188rem;
 }
 
 #crea {
@@ -119,12 +124,12 @@ h3 {
 }
 
 label {
-    width: 818px;
+    width: 51.125rem;
     text-align: left;
     color:#09244B;
-    font-size: 24px;
-    padding-left: 15px;
-    margin-top: 15px;
+    font-size: 1.5rem;
+    padding-left: 0.938rem;
+    margin-top: 0.938rem;
 }
 
 label .asterisk {
@@ -132,8 +137,8 @@ label .asterisk {
 }
 
 input {
-    width: 818px;
-    height: 50px;
+    width: 51.125rem;
+    height: 3.125rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 0.5rem;
@@ -141,21 +146,21 @@ input {
     font-family:'Lato', sans-serif;
     font-weight: 580;
     color: #09244b7e;
-    padding-left: 5px;
-    font-size: 20px;
+    padding-left: 0.313rem;
+    font-size: 1.25rem;
 }
 
 ::placeholder {
     font-family:'Lato', sans-serif;
     font-weight: 580;
     color: #09244b7e;
-    padding-left: 5px;
-    font-size: 20px;
+    padding-left: 0.313rem;
+    font-size: 1.25rem;
 }
 
 select {
-    width: 818px;
-    height: 50px;
+    width: 51.125rem;
+    height: 3.125rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 0.5rem;
@@ -167,8 +172,8 @@ option {
     font-family:'Lato', sans-serif;
     font-weight: 580;
     color: #09244b7e;
-    padding-left: 5px;
-    font-size: 20px;
+    padding-left: 0.313rem;
+    font-size: 1.25rem;
 }
 
 select option:hover {
@@ -192,7 +197,7 @@ select option:hover {
 }
 
 .arquetipos button {
-    width: 223px;
+    width: 13.938rem;
     height: auto;
     padding: 0;
     background: none;
@@ -204,7 +209,7 @@ select option:hover {
 }
 
 .arquetipos img {
-    width: 223px;
+    width: 13.938rem;
     height: auto;
     margin: 0;
     margin-bottom: 1rem;
@@ -217,7 +222,7 @@ select option:hover {
 
 p {
     font-family:'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #09244B;
     text-align: center;
     margin: 0;
@@ -230,16 +235,17 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 #submitBtn,
 #submitBtn2 {
-    width: 210px;
-    height: 40px;
+    width: 13.125rem;
+    height: 2.5rem;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    padding-top: 6px;
+    padding-top: 0.375rem;
     cursor: pointer;
     border: none;
     color: #F2F2F2;
@@ -259,15 +265,26 @@ p {
 
 footer {
     display: flex;
-    padding-left: 50px;
     justify-content: space-between;
     align-items: center;
+    place-items: center;
+    text-align: center;
     background-color: white;
     height: 3.75rem;
     margin-top: 6rem;
     border-top:1px solid #09244B;
 }
 
+.copyright {
+    width: 100%;
+    color: 1px #09244B;
+}
+
+.copyright p {
+    font-size: 0.875rem;
+}
+
+/*
 .iconos {
     padding: 20px;
     margin-right: 25px;
@@ -284,11 +301,57 @@ a {
     text-decoration: none;
 }
 
-/*
 .enlarged {
     font-size: 1.2em;
     transform: scale(1.2);
 }
 */
 
-@media 
+
+@media only screen and (max-width: 523px) {
+
+.fila1,
+.fila2,
+.fila3,
+.fila4 {
+    text-align: center;
+}
+
+.arquetipos button {
+    margin: 0;
+    padding: 0;
+    width: 10.039rem;
+}
+
+.arquetipos img {
+    width: 10.039rem;
+    height: auto;
+}
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+input,
+label,
+select,
+h1,
+h2,
+h3 {
+    width: 90%;
+}
+
+h2 {
+    text-align: center;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .arquetipos button {
+}
+
+}

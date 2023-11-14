@@ -1,9 +1,6 @@
-//Para la entrada de texto de los inputs
 
-// Obtén una lista de todos los campos de entrada
 const inputs = document.querySelectorAll('input[type="text"]');
 
-// Agrega un evento de escucha input a cada campo de entrada
 inputs.forEach(input => {
     input.addEventListener('input', function () {
         // Verifica el ID del campo de entrada actual
