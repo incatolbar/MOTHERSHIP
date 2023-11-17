@@ -6,7 +6,7 @@ inputs.forEach(input => {
         // Verifica el ID del campo de entrada actual
         if (this.id !== 'input2') {
             // Aplica la lógica para permitir solo letras, punto y coma
-            this.value = this.value.replace(/[^a-zA-Z.,]/g, '');
+            this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s.,'-]/g, '');
         }
     });
 });
@@ -35,6 +35,8 @@ buttonsComportamiento.forEach((button) => {
 document.getElementById('submitBtn').addEventListener('click', function () {
   const nombre = document.querySelector('#nombre').value;
   const enlace = document.querySelector('#enlace').value;
+  const empresa = document.querySelector('#empresa').value;
+  const mision = document.querySelector('#mision').value;
   const genero = document.querySelector('#genero').value;
   const protagonista = document.querySelector('#protagonista').value;
   const objetivo = document.querySelector('#objetivo').value;
@@ -46,6 +48,8 @@ document.getElementById('submitBtn').addEventListener('click', function () {
 
   console.log('nombre:', nombre);
   console.log('enlace:', enlace);
+  console.log('empresa:', empresa);
+  console.log('mision:', mision);
   console.log('genero:', genero);
   console.log('protagonista:', protagonista);
   console.log('objetivo:', objetivo);
@@ -56,7 +60,7 @@ document.getElementById('submitBtn').addEventListener('click', function () {
   console.log('mensaje:', mensaje);
   console.log('comportamientoSeleccionado:', comportamientoSeleccionado);
 
-  if (nombre && enlace && genero && protagonista && objetivo && motivacion && malo && ayudante && actitud && mensaje && comportamientoSeleccionado) {
+  if (nombre && enlace && empresa && mision && genero && protagonista && objetivo && motivacion && malo && ayudante && actitud && mensaje && comportamientoSeleccionado) {
     fetch('URL_de_MARIANA', {
       method: 'POST',
       headers: {
@@ -65,6 +69,8 @@ document.getElementById('submitBtn').addEventListener('click', function () {
       body: JSON.stringify({
         nombre: nombre,
         enlace: enlace,
+        empresa: empresa,
+        mision: mision,
         genero: genero,
         protagonista: protagonista,
         objetivo: objetivo,

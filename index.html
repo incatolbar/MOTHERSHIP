@@ -35,13 +35,13 @@
     <h2>Crea la narrativa transmedia</h2>
     <h3 id="elementos">Elementos de marca:</h3>
     <label for="nombre">Nombre de la campaña transmedia <span class="asterisk">*</span></label>
-    <input type="text" id="nombre" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; " required pattern="^[.,]*$">
+    <input type="text" id="nombre" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; " required pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s.,'-]+"S>
     <label for="enlace">Enlace para más información <span class="asterisk">*</span></label>
     <input type="enlace" id="enlace" placeholder="URL, contacto, etc." maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
-    <label for="nombre">Nombre empresa o emprendimiento <span class="asterisk">*</span></label>
-    <input type="text" id="nombre" required pattern="^[.,]*$">
-    <label for="nombre">Misión (En una frase concreta, sencilla y clara describe de que trata tu emprendimiento) <span class="asterisk">*</span></label>
-    <input type="text" id="nombre" required pattern="^[.,]*$">
+    <label for="empresa">Nombre empresa o emprendimiento <span class="asterisk">*</span></label>
+    <input type="text" id="empresa" required pattern="^[.,]*$">
+    <label for="mision">Misión (En una frase concreta, sencilla y clara describe de que trata tu emprendimiento) <span class="asterisk">*</span></label>
+    <input type="text" id="mision" required pattern="^[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s]+$">
 </div>
 <hr>
 <div class="campos2">
