@@ -12,12 +12,16 @@
             <img src="./images/Logo.png" alt="Logo de MotherShip" id="logo">
         </div>
         <nav class="opciones">
-            <ul>
+            <ul id="nav-list">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Iniciar sesión</a></li>
             </ul>
+            <div id="menu-icon">&#9776;</div>
         </nav>
+        <div id="logout-icon">
+            <img src="./images/cerrar.png" alt="Cerrar sesión">
+        </div>
     </header>
     
     <div class="breadcrumbs" id="breadcrumbs">
@@ -37,7 +41,7 @@
     <label for="nombre">Nombre de la campaña transmedia <span class="asterisk">*</span></label>
     <input type="text" id="nombre" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; " required pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s.,'-]+"S>
     <label for="enlace">Enlace para más información <span class="asterisk">*</span></label>
-    <input type="enlace" id="enlace" placeholder="URL, contacto, etc." maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
+    <input type="url" id="enlace" placeholder="URL, contacto, etc." maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
     <label for="empresa">Nombre empresa o emprendimiento <span class="asterisk">*</span></label>
     <input type="text" id="empresa" required pattern="^[.,]*$">
     <label for="mision">Misión (En una frase concreta, sencilla y clara describe de que trata tu emprendimiento) <span class="asterisk">*</span></label>

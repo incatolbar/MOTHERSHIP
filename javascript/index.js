@@ -1,3 +1,4 @@
+//para la entrada de caracteres de los input
 
 const inputs = document.querySelectorAll('input[type="text"]');
 
@@ -10,6 +11,18 @@ inputs.forEach(input => {
         }
     });
 });
+
+//para el menu en responsive
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuIcon = document.getElementById('menu-icon');
+  const navList = document.getElementById('nav-list');
+
+  menuIcon.addEventListener('click', function () {
+      navList.classList.toggle('show');
+  });
+});
+
 
 //Para la selección de los arquetipos 
 
@@ -93,17 +106,4 @@ document.getElementById('submitBtn').addEventListener('click', function () {
   } else {
     alert('Completa todos los campos requeridos.');
   }
-});
-
-
-  
-//Para el boton de zoom, ponerle clase enlarge a lo que se agrandaria. En proceso.
-
-const zoomIcon = document.getElementById("zoom");
-const elementsToEnlarge = document.querySelectorAll(".enlarge");
-
-zoomIcon.addEventListener("click", function() {
-    elementsToEnlarge.forEach(function(element) {
-        element.style.fontSize = "4em"; 
-    });
 });
