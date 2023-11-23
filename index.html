@@ -15,7 +15,7 @@
             <ul id="nav-list">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="#">Iniciar sesión</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
             </ul>
             <div id="menu-icon">&#9776;</div>
         </nav>
@@ -39,13 +39,13 @@
     <h2>Crea la narrativa transmedia</h2>
     <h3 id="elementos">Elementos de marca:</h3>
     <label for="nombre">Nombre de la campaña transmedia <span class="asterisk">*</span></label>
-    <input type="text" id="nombre" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; " required pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s.,'-]+"S>
+    <input type="text" id="nombre" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; " required>
     <label for="enlace">Enlace para más información <span class="asterisk">*</span></label>
-    <input type="url" id="enlace" placeholder="URL, contacto, etc." maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
+    <input type="text" id="enlace" placeholder="URL, contacto, etc." maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
     <label for="empresa">Nombre empresa o emprendimiento <span class="asterisk">*</span></label>
-    <input type="text" id="empresa" required pattern="^[.,]*$">
+    <input type="text" id="empresa" required>
     <label for="mision">Misión (En una frase concreta, sencilla y clara describe de que trata tu emprendimiento) <span class="asterisk">*</span></label>
-    <input type="text" id="mision" required pattern="^[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s]+$">
+    <input type="text" id="mision" required>
 </div>
 <hr>
 <div class="campos2">
@@ -59,21 +59,21 @@
         <option value="masculino">Masculino</option>
         </select>
     <label for="protagonista">Ponle un nombre a tu protagonista: <span class="asterisk">*</span></label>
-    <input type="text" id="protagonista" placeholder="Ejemplo: Felipe.">
+    <input type="text" id="protagonista" placeholder="Ejemplo: Felipe." required>
     <label for="objetivo">Todos tenemos un objetivo en la vida, define para tu protagonista un objetivo: <span class="asterisk">*</span></label>
-    <input type="text" id="objetivo" placeholder="Ejemplo: Encontrar a la princesa.">
+    <input type="text" id="objetivo" placeholder="Ejemplo: Encontrar a la princesa." required>
     <label for="motivacion">La motivación es importante para cumplir nuestros objetivos, define que motiva a tu protagonista? <span class="asterisk">*</span></label>
-    <input type="text" id="motivacion" placeholder="Ejemplo: Amor, odio, esperanza, alegría, venganza, ira, etc.">
+    <input type="text" id="motivacion" placeholder="Ejemplo: Amor, odio, esperanza, alegría, venganza, ira, etc." required>
     <hr>
     <h3 id="emocion">Paso 2: Genera la emoción en la historia: </h3>
     <label for="malo">¿Qué o quién es el malo que le impide a tu protagonista cumplir su objetivo? <span class="asterisk">*</span></label>
-    <input type="text" id="malo" placeholder="Ejemplo: Un villano, un obstáculo, un miedo, una duda, etc. ">
+    <input type="text" id="malo" placeholder="Ejemplo: Un villano, un obstáculo, un miedo, una duda, etc. " required>
     <label for="ayudante">Asigna un ayudante a tu protagonista: <span class="asterisk">*</span></label>
-    <input type="text" id="ayudante" placeholder="Ejemplo: Un amigo, un familiar, un objeto mágico, una fuerza interior, etc.">
+    <input type="text" id="ayudante" placeholder="Ejemplo: Un amigo, un familiar, un objeto mágico, una fuerza interior, etc." required>
     <label for="actitud">Qué actitud tiene el ayudante de tu protagonista: <span class="asterisk">*</span></label>
-    <input type="text" id="actitud" placeholder="Ejemplo: Divertido, loco, sabio, etc.">
+    <input type="text" id="actitud" placeholder="Ejemplo: Divertido, loco, sabio, etc." required>
     <label for="mensaje">¿Cuál es el mensaje que quieres dejar con la historia? <span class="asterisk">*</span></label>
-    <input type="text" id="mensaje" placeholder="Ejemplo: Enfrentar desafíos o pruebas, Resolver conflictos, etc.">
+    <input type="text" id="mensaje" placeholder="Ejemplo: Enfrentar desafíos o pruebas, Resolver conflictos, etc." required>
 </div>
 
     <div class="arquetipos">

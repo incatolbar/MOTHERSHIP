@@ -74,7 +74,7 @@ document.getElementById('submitBtn').addEventListener('click', function () {
   console.log('comportamientoSeleccionado:', comportamientoSeleccionado);
 
   if (nombre && enlace && empresa && mision && genero && protagonista && objetivo && motivacion && malo && ayudante && actitud && mensaje && comportamientoSeleccionado) {
-    fetch('URL_de_MARIANA', {
+    fetch('http://localhost:3000/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -97,11 +97,22 @@ document.getElementById('submitBtn').addEventListener('click', function () {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.status === 'success') {
+        console.log(data);
+        if (data.status === 'Creado') {
+          const usuarioCreado = data.user;
+          console.log('Usuario creado:', usuarioCreado);
+
           window.location.href = './html/segunda.html';
         } else {
-          alert('Error al guardar los datos.');
+          const mensajeError = data.message;
+          console.log('Error al guardar los datos:', mensajeError);
+
+          alert('Error al guardar los datos. ' + mensajeError);
         }
+      })
+      .catch((error) => {
+        console.error('Error en la solicitud:', error);
+        alert('Error en la solicitud. Consulta la consola para obtener más información.');
       });
   } else {
     alert('Completa todos los campos requeridos.');
