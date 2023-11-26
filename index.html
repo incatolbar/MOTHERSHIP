@@ -14,7 +14,6 @@
         <nav class="opciones">
             <ul id="nav-list">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Contacto</a></li>
                 <li><a href="#">Cerrar sesión</a></li>
             </ul>
             <div id="menu-icon">&#9776;</div>
@@ -56,8 +55,8 @@
 <div class="campos2">
     <h2>Nombre de la campaña transmedia</h2>
     <h3 id="crea">Crea la historia con ayuda de la IA (storytelling).</h3>
-    <h3 id="paso1">Paso 1: Crea el protagonista:</h3>
-    <label for="genero">Define el género de tu protagonista (que representa tu marca) <span class="asterisk">*</span></label>
+    <h3 id="paso1">Paso 1: Crea el protagonista (quién representa tu marca)</h3>
+    <label for="genero">Define el género de tu protagonista<span class="asterisk">*</span></label>
         <select name="genero" id="genero" size="1">
         <option value="" disabled selected></option>
         <option value="femenino">Femenino</option> 
@@ -139,6 +138,19 @@
         </div>
     </div>
 
+<!-- Contenedor de la alerta de éxito -->
+<div id="success-alert" class="custom-alert success-alert">
+    <p id="exitop">¡Felicidades! Has rellenado el formulario de Storytelling (Historia) de manera exitosa.</p>
+    <button onclick="redirectToNextPage()" class="success-btn"></button>
+</div>
+
+<!-- Contenedor de la alerta de error -->
+<div id="error-alert" class="custom-alert error-alert">
+    <p id="errorp">Mensaje: ¡Tenemos un problema!<p>
+    <p>Error en el formulario, campo(s) incompleto(s) antes de continuar 
+        asegúrese de no dejar ningún campo vacío, rellene correctamente los datos requeridos.</p>
+    <button onclick="closeErrorAlert()" class="close-btn">&#10005;</button>
+</div>
     
     <div class="submit">
     <button type="button" id="submitBtn">Generar historia</button>

@@ -260,6 +260,87 @@ p {
     padding: 0;
 }
 
+
+
+/* Estilos para las alertas */
+.custom-alert {
+    width: 25rem;
+    height: 8rem;
+    font-family:'Lato', sans-serif;
+    display: none;
+    position: fixed;
+    box-shadow: 0 5px 10px rgba(128, 0, 128, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    border-bottom: rgba(186, 85, 211, 0.486);
+    border-radius: 20px;
+}
+
+.success-btn {
+    margin-top: 1rem;
+    background: url('/images/check-circle.png') no-repeat;
+    background-size: contain; 
+    width: 50px; 
+    height: 50px; 
+    border: none;
+    cursor: pointer;
+}
+
+/* para la alerta de éxito */
+.success-alert {
+    background-color:white;
+    color: #09244B;
+}
+
+/*  para la alerta de error */
+.error-alert {
+    background-color: white;
+    color: #09244B;
+}
+
+#errorp {
+    color: #09244B;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.15rem;
+    padding-bottom: 1rem;
+}
+
+#exitop {
+    padding-top: 1rem;
+    color: #09244B;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+
+.error-alert p {
+    color: rgba(9, 36, 75, 0.50);
+    text-align: left;
+    font-size: 1.15rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: white;
+    color: #09244B;
+    font-weight: 800;   
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+
+
+
 .submit {
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -360,6 +441,17 @@ a {
     height: auto;
 }
 
+.custom-alert {
+    width: 80%;
+    height: auto;
+}
+
+input,
+select {
+        height: 6rem;
+}
+
+
 }
 
 @media only screen and (min-width: 505px) and (max-width: 523px) {
@@ -426,20 +518,28 @@ header {
 }
 }
 
+@media only screen and (min-width: 505px) and (max-width: 775px) {
+
+input,
+select {
+        height: 3.5rem;
+}
+}
 
 @media only screen and (max-width: 776px) {
 
-input {
-    height: 5rem;
+ label {
+        font-size: 1.1rem; 
+}
+
+input,
+select {
+        font-size: 1.1rem; 
 }
 
 ::placeholder {
-    font-size: ;
+        font-size: 1.1rem; 
 }
-
-}
-
-@media only screen and (max-width: 776px) {
 
     .fila1,
     .fila2,
@@ -460,6 +560,7 @@ h3,
 #storytelling,
 #copy {
     width: 90%;
+    
 }
 
 h2 {
