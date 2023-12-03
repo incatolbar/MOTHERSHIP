@@ -46,7 +46,6 @@ buttonsComportamiento.forEach((button) => {
 
  // Para enviar los datos a la base de datos y redirigir si todo está ok
 
-  const successAlert = document.getElementById('success-alert');
   const errorAlert = document.getElementById('error-alert');
   
  
@@ -81,7 +80,7 @@ buttonsComportamiento.forEach((button) => {
 
 
     if (nombre && enlace && empresa && mision && genero && protagonista && objetivo && motivacion && malo && ayudante && actitud && mensaje && comportamientoSeleccionado) {
-        fetch('http://localhost:3000/users', {
+        fetch('http://localhost:3000/api/users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -102,37 +101,26 @@ buttonsComportamiento.forEach((button) => {
                 comportamiento: comportamientoSeleccionado,
             }),
         })
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data);
-                if (data.status === 'Creado') {
-                    const usuarioCreado = data.user;
-                    console.log('Usuario creado:', usuarioCreado);
-
-                    // Mostrar la alerta de éxito
-                    successAlert.style.display = 'block';
-                } else {
-                    const mensajeError = data.message;
-                    console.log('Error al guardar los datos:', mensajeError);
-
-                    // Mostrar la alerta de error
-                    errorAlert.style.display = 'block';
-                }
-            })
-            .catch((error) => {
-              console.error('Error en la solicitud:', error);
-              alert('Error en la solicitud. Consulta la consola para obtener más información.');
-          });
-      } else {
-          // Mostrar la alerta de error
-          errorAlert.style.display = 'block';
-      }
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          if (data.status === 'Creado') {
+            // Si los datos se guardaron correctamente, redirigir a la siguiente página
+            window.location.href = './html/segunda.html';
+          } else {
+            // Mostrar la alerta de error
+            errorAlert.style.display = 'block';
+          }
+        })
+        .catch((error) => {
+          console.error('Error en la solicitud:', error);
+          alert('Error en la solicitud. Consulta la consola para obtener más información.');
+        });
+    } else {
+      // Mostrar la alerta de error
+      errorAlert.style.display = 'block';
+    }
   });
-
-// Función para redirigir a la siguiente página desde la alerta de éxito
-function redirectToNextPage() {
-    window.location.href = './html/segunda.html';
-}
 
 function closeErrorAlert() {
   // Oculta la alerta de error

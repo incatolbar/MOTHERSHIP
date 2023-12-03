@@ -13,7 +13,6 @@
         </div>
         <nav class="opciones">
             <ul id="nav-list">
-                <li><a href="#">Inicio</a></li>
                 <li><a href="#">Cerrar sesión</a></li>
             </ul>
             <div id="menu-icon">&#9776;</div>
@@ -42,13 +41,13 @@
 <div class="campos1">
     <h2>Crea la narrativa transmedia</h2>
     <h3 id="elementos">Elementos de marca:</h3>
-    <label for="nombre">Nombre de la campaña transmedia <span class="asterisk">*</span></label>
-    <input type="text" id="nombre" placeholder="Ejemplo: &quot;El Legado del Príncipe Heredero&quot; " required>
-    <label for="enlace">Enlace para más información <span class="asterisk">*</span></label>
+    <label for="nombre">Nombre de la campaña transmedia: <span class="asterisk">*</span></label>
+    <input type="text" id="nombre" placeholder="Ejemplo: &quot;El legado del príncipe h eredero&quot; " required>
+    <label for="enlace">Enlace para más información:</label>
     <input type="text" id="enlace" placeholder="URL, contacto, etc." maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
     <label for="empresa">Nombre del emprendimiento o marca representada en la campaña: <span class="asterisk">*</span></label>
     <input type="text" id="empresa" required>
-    <label for="mision">Misión de la marca: En una frase sencilla y clara describe qué es y cual es la importancia de su producto <span class="asterisk">*</span></label>
+    <label for="mision">Misión de la marca: Describe en una frase sencilla y clara cual es la importancia de tu producto: <span class="asterisk">*</span></label>
     <input type="text" id="mision" required>
 </div>
 <hr>
@@ -56,7 +55,7 @@
     <h2>Nombre de la campaña transmedia</h2>
     <h3 id="crea">Crea la historia con ayuda de la IA (storytelling).</h3>
     <h3 id="paso1">Paso 1: Crea el protagonista (quién representa tu marca)</h3>
-    <label for="genero">Define el género de tu protagonista<span class="asterisk">*</span></label>
+    <label for="genero">Define el género de tu protagonista: <span class="asterisk">*</span></label>
         <select name="genero" id="genero" size="1">
         <option value="" disabled selected></option>
         <option value="femenino">Femenino</option> 
@@ -65,19 +64,19 @@
     <label for="protagonista">Ponle un nombre a tu protagonista: <span class="asterisk">*</span></label>
     <input type="text" id="protagonista" placeholder="Ejemplo: Felipe." required>
     <label for="objetivo">Todos tenemos un objetivo en la vida, define para tu protagonista un objetivo: <span class="asterisk">*</span></label>
-    <input type="text" id="objetivo" placeholder="Ejemplo: Encontrar a la princesa." required>
-    <label for="motivacion">La motivación es importante para cumplir nuestros objetivos, define que motiva a tu protagonista? <span class="asterisk">*</span></label>
-    <input type="text" id="motivacion" placeholder="Ejemplo: Amor, odio, esperanza, alegría, venganza, ira, etc." required>
+    <input type="text" id="objetivo" placeholder="Ejemplo: encontrar a la princesa." required>
+    <label for="motivacion">La motivación es importante para cumplir nuestros objetivos, define ¿qué motiva a tu protagonista? <span class="asterisk">*</span></label>
+    <input type="text" id="motivacion" placeholder="Ejemplo: amor, odio, esperanza, alegría, venganza, ira, etc." required>
     <hr>
-    <h3 id="emocion">Paso 2: Genera la emoción en la historia: </h3>
-    <label for="malo">¿Qué o quién es el malo que le impide a tu protagonista cumplir su objetivo? <span class="asterisk">*</span></label>
-    <input type="text" id="malo" placeholder="Ejemplo: Un villano, un obstáculo, un miedo, una duda, etc. " required>
+    <h3 id="emocion">Paso 2: Genera la emoción en la historia </h3>
+    <label for="malo">¿Qué o quién le impide a tu protagonista cumplir su objetivo? <span class="asterisk">*</span></label>
+    <input type="text" id="malo" placeholder="Ejemplo: un villano, un obstáculo, un miedo, una duda, etc. " required>
     <label for="ayudante">Asigna un ayudante a tu protagonista: <span class="asterisk">*</span></label>
-    <input type="text" id="ayudante" placeholder="Ejemplo: Un amigo, un familiar, un objeto mágico, una fuerza interior, etc." required>
-    <label for="actitud">Qué actitud tiene el ayudante de tu protagonista: <span class="asterisk">*</span></label>
-    <input type="text" id="actitud" placeholder="Ejemplo: Divertido, loco, sabio, etc." required>
+    <input type="text" id="ayudante" placeholder="Ejemplo: un amigo, un familiar, un objeto mágico, una fuerza interior, etc." required>
+    <label for="actitud">¿Qué actitud tiene el ayudante de tu protagonista? <span class="asterisk">*</span></label>
+    <input type="text" id="actitud" placeholder="Ejemplo: divertido, loco, sabio, etc." required>
     <label for="mensaje">¿Cuál es el mensaje que quieres dejar con la historia? <span class="asterisk">*</span></label>
-    <input type="text" id="mensaje" placeholder="Ejemplo: Enfrentar desafíos o pruebas, Resolver conflictos, etc." required>
+    <input type="text" id="mensaje" placeholder="Ejemplo: enfrentar desafíos o pruebas, resolver conflictos, etc." required>
 </div>
 
     <div class="arquetipos">
@@ -138,17 +137,17 @@
         </div>
     </div>
 
-<!-- Contenedor de la alerta de éxito -->
+<!-- Contenedor de la alerta de éxito 
 <div id="success-alert" class="custom-alert success-alert">
     <p id="exitop">¡Felicidades! Has rellenado el formulario de Storytelling (Historia) de manera exitosa.</p>
     <button onclick="redirectToNextPage()" class="success-btn"></button>
-</div>
+</div>-->
 
 <!-- Contenedor de la alerta de error -->
 <div id="error-alert" class="custom-alert error-alert">
-    <p id="errorp">Mensaje: ¡Tenemos un problema!<p>
-    <p>Error en el formulario, campo(s) incompleto(s) antes de continuar 
-        asegúrese de no dejar ningún campo vacío, rellene correctamente los datos requeridos.</p>
+    <p id="errorp">Mensaje: ¡Tienes un problema!<p>
+    <p>Error en el formulario, campo(s) incompleto(s). Antes de continuar 
+        asegúrate de no dejar ningún campo vacío y rellena correctamente los datos requeridos.</p>
     <button onclick="closeErrorAlert()" class="close-btn">&#10005;</button>
 </div>
     

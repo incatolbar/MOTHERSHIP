@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const storytellingTextarea = document.getElementById('storytelling');
     const copyTextarea = document.getElementById('copy');
 
-    fetch('http://localhost:3000/user')
+    fetch('http://localhost:3000/api/users')
         .then(response => response.json())
         .then(data => {
 

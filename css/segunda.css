@@ -11,6 +11,10 @@
     border-radius: 1%;
     border-color: rgb(165, 161, 161);
     text-align: justify;
+    font-family: 'Lato', sans-serif;
+    color: #09244b7e;
+    font-size: 1.25rem;
+    font-weight: 580;
 }
 
 #copy {
@@ -20,6 +24,10 @@
     margin-top: 2rem;
     border-radius: 1%;
     border-color: rgb(165, 161, 161);
+    font-family: 'Lato', sans-serif;
+    color: #09244b7e;
+    font-size: 1.25rem;
+    font-weight: 580;
 }
 
 ::placeholder {
