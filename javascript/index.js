@@ -80,7 +80,7 @@ buttonsComportamiento.forEach((button) => {
 
 
     if (nombre && enlace && empresa && mision && genero && protagonista && objetivo && motivacion && malo && ayudante && actitud && mensaje && comportamientoSeleccionado) {
-        fetch('http://localhost:3000/api/users', {
+        fetch('https://mothership-back.onrender.com/api/storytelling', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
