@@ -151,7 +151,7 @@ label {
     width: 51.125rem;
     text-align: left;
     color:#09244B;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-left: 0.938rem;
     margin-top: 0.938rem;
 }
@@ -195,20 +195,19 @@ select {
     font-weight: 580;
     color: #09244b7e;
     padding-left: 0.313rem;
-    font-size: 1.25rem;
+    font-size: 1.25rem; 
 }
 
 
-option {
+select option {
     font-family:'Lato', sans-serif;
     font-weight: 580;
     color: #09244b7e;
-    padding-left: 0.313rem;
     font-size: 1.25rem;
 }
 
 select option:hover {
-    background-color: #8A6DFF ; 
+    background-color: #8A6DFF80;
 }
 
 
@@ -355,7 +354,7 @@ p {
     width: 13.125rem;
     height: 2.5rem;
     border-radius: 4px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     padding-top: 0.375rem;
     cursor: pointer;
